@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="467dp"
+        app:srcCompat="@drawable/quizzapp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/boton_jugar"
+            android:layout_width="113dp"
+            android:layout_height="79dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="JUGAR"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/boton_opciones"
+            android:layout_width="147dp"
+            android:layout_height="81dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="OPCIONES"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

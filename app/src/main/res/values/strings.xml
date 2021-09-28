@@ -3,4 +3,5 @@
     <string name="play">Jugar</string>
     <string name="settings">Opciones</string>
     <string name="txt_settings">Opciones</string>
+    <string name="txt_info_settings">Elija la configuración del juego.</string>
 </resources>

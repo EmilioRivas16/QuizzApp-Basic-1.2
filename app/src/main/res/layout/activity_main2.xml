@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="103dp"
-        android:layout_height="108dp"
-        android:text="Pantalla de oopciones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="261dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/txt_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/txt_settings"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+</LinearLayout>

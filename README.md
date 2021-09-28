@@ -1,2 +1,2 @@
 # QuizzApp-Basic-1.2
-Proyecto de la matera de Desarrollo Móvil
+Proyecto de la materia de Desarrollo Móvil

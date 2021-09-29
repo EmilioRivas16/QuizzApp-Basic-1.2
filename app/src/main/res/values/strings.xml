@@ -4,4 +4,11 @@
     <string name="settings">Opciones</string>
     <string name="txt_settings">Opciones</string>
     <string name="txt_info_settings">Elija la configuración del juego.</string>
+    <string name="sett_opt1">Seleccionar Todos</string>
+    <string name="sett_opt2">Matemáticas</string>
+    <string name="sett_opt3">Literatura</string>
+    <string name="sett_opt4">Historia</string>
+    <string name="sett_opt5">Ciencias Naturales</string>
+    <string name="sett_opt6">Deportes</string>
+    <string name="sett_opt7">Cultura General</string>
 </resources>

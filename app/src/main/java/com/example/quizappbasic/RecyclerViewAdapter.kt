@@ -6,10 +6,13 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewAdapter(var dataSet: ArrayList<Int>) :
+class RecyclerViewAdapter(private val dataSet: List<String>) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var checkbox: CheckBox = itemView.findViewById(R.id.checkSett)
+        fun bind(data: String) {
+            checkbox.text = data
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -21,8 +24,8 @@ class RecyclerViewAdapter(var dataSet: ArrayList<Int>) :
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var dataPosition = dataSet[position]
-        holder.checkbox.text = dataPosition.toString()
+        var data = dataSet[position]
+        holder.bind(data)
     }
 
     override fun getItemCount(): Int = dataSet.size

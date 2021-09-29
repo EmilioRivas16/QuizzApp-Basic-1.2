@@ -3,7 +3,7 @@
     <string name="play">Jugar</string>
     <string name="settings">Opciones</string>
     <string name="txt_settings">Opciones</string>
-    <string name="txt_info_settings">Elija la configuración del juego.</string>
+    <string name="txt_info_settings">Elija los temas del juego.</string>
     <string name="sett_opt1">Seleccionar Todos</string>
     <string name="sett_opt2">Matemáticas</string>
     <string name="sett_opt3">Literatura</string>
@@ -11,4 +11,8 @@
     <string name="sett_opt5">Ciencias Naturales</string>
     <string name="sett_opt6">Deportes</string>
     <string name="sett_opt7">Cultura General</string>
+    <string name="txt_info_settings2">Elija el número de preguntas.</string>
+    <string name="btn_random">Aleatorio</string>
+    <string name="txt_info_settings3">Elija la dificultad del juego.</string>
+    <string name="txt_info_settings4">Permitir pistas.</string>
 </resources>

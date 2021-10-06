@@ -9,9 +9,17 @@ import androidx.recyclerview.widget.RecyclerView
 class RecyclerViewAdapter(private val dataSet: List<Data>) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var checkbox: CheckBox = itemView.findViewById(R.id.checkSett)
-        fun bind(data: String) {
-            checkbox.text = data
+        private var checkbox: CheckBox = itemView.findViewById(R.id.checkSett)
+        fun populate(item : Data){
+            checkbox.text = item.checkSett
+            checkbox.isChecked = item.isSelected
+        }
+
+        fun setSelectedItemState(item: Data, function:(item: Data) -> Unit){
+            checkbox.setOnClickListener{
+                item.isSelected = !item.isSelected
+                function(item)
+            }
         }
     }
 
@@ -24,8 +32,50 @@ class RecyclerViewAdapter(private val dataSet: List<Data>) :
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var data = dataSet[position]
-        holder.bind(data.checkSett)
+        holder.populate(dataSet[position])
+        holder.setSelectedItemState(dataSet[position], selectedItemsSetter)
+    }
+
+    private var selectedItemsSetter = fun(dataSet: Data){
+        if (dataSet.isFirst){
+            setIsSelectedAllItems(dataSet.isSelected)
+        } else {
+            setIsSelectAllOptionsItem()
+        }
+
+        notifyDataSetChanged()
+    }
+
+    private fun setIsSelectedAllItems(isChecked: Boolean){
+        dataSet.map{
+            it.isSelected = isChecked
+        }
+    }
+
+    private fun setIsSelectAllOptionsItem() {
+        setIsSelectAllOptionsItemToTrueState()
+        setIsSelectAllOptionsItemToFalseState()
+    }
+
+    private fun setIsSelectAllOptionsItemToTrueState() {
+        val selectedFilters = dataSet.filter { it.isSelected }
+
+        if (selectedFilters.size == dataSet.size - 1) {
+            dataSet.find {
+                it.checkSett == dataSet.first().checkSett
+            }?.isSelected = true
+        }
+    }
+
+    private fun setIsSelectAllOptionsItemToFalseState() {
+        val deselectFilters =
+            dataSet.filter { !it.isSelected }
+
+        if (deselectFilters.isNotEmpty() && dataSet.first().isSelected) {
+            dataSet.find {
+                it.checkSett == dataSet.first().checkSett
+            }?.isSelected = false
+        }
     }
 
     override fun getItemCount(): Int = dataSet.size

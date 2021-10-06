@@ -1,3 +1,3 @@
 package com.example.quizappbasic
 
-data class Data (val checkSett: String, val isSelected: Boolean)
+data class Data (val checkSett: String, var isSelected: Boolean, val isFirst: Boolean)

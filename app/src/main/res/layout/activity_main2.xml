@@ -78,7 +78,10 @@
         <com.google.android.material.slider.Slider
             android:id="@+id/slider_num_questions"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:valueTo="10"
+            android:valueFrom="5"
+            android:stepSize="1"/>
 
         <TextView
             android:id="@+id/txt_info_settings3"
@@ -95,7 +98,10 @@
         <com.google.android.material.slider.Slider
             android:id="@+id/slider_difficulty"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="3"
+            android:stepSize="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"

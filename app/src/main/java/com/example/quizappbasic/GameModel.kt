@@ -3,46 +3,26 @@ package com.example.quizappbasic
 import android.content.Context
 import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.slider.Slider
+import java.util.concurrent.ThreadLocalRandom
 
 class GameModel(context: Context) {
     val dataModel: DataModel = DataModel(context)
     var gameOptions = listOf<Game>(
         Game(
             listOf(
-                dataModel.settOpts[1].isSelected,
-                dataModel.settOpts[3].isSelected
-            ), 5, 1, false
+                dataModel.settOpts[1].checkSett,
+                dataModel.settOpts[3].checkSett
+            ), 0, 0, false
         )
     )
 
-    // Cambia el número de preguntas con respecto al Slider correspondiente
-    fun changeStatusNumQuestions(sliderView: Slider) {
-        sliderView.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
-            override fun onStartTrackingTouch(slider: Slider) {
-                slider.value.toString()
-            }
-
-            override fun onStopTrackingTouch(slider: Slider) {
-                gameOptions[0].numQuestions = slider.value.toInt()
-            }
-        })
+    fun randomNum(range: IntRange): Int {
+        var num = (range).random()
+        return num
     }
 
-    // Cambia la dificultad del juego con respecto al Slider correspondiente
-    fun changeStatusDifficulty(sliderView: Slider) {
-        sliderView.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
-            override fun onStartTrackingTouch(slider: Slider) {
-                slider.value.toString()
-            }
-
-            override fun onStopTrackingTouch(slider: Slider) {
-                gameOptions[0].difficulty = slider.value.toInt()
-            }
-        })
-    }
-
-    // Cambia el estado del uso de Ayudas con respecto al Switch
-    fun changeSwitchState(switchView: SwitchCompat) {
-        gameOptions[0].cheats = switchView.isChecked
+    fun randomListNum(rangeList: IntRange, rangeTake: IntRange): List<Int> {
+        val randomNums = (rangeList).shuffled().take(randomNum(rangeTake))
+        return randomNums
     }
 }

@@ -2,13 +2,10 @@ package com.example.quizappbasic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.SwitchCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.slider.Slider
-import kotlin.random.Random
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var dataModel: DataModel
@@ -29,18 +26,17 @@ class MainActivity2 : AppCompatActivity() {
         //Inicializar configuración predeterminada
         recyclerView.adapter = RecyclerViewAdapter(dataModel.settOpts)
         sliderQuestions.value =
-            sliderQuestions.valueFrom + gameModel.gameOptions[0].numQuestions * sliderQuestions.stepSize
+            sliderQuestions.valueFrom + gameModel.gameOptions.numQuestions * sliderQuestions.stepSize
         sliderDiff.value =
-            sliderDiff.valueFrom + gameModel.gameOptions[0].difficulty * sliderDiff.stepSize
-        switchCheats.isChecked = gameModel.gameOptions[0].cheats
+            sliderDiff.valueFrom + gameModel.gameOptions.difficulty * sliderDiff.stepSize
+        switchCheats.isChecked = gameModel.gameOptions.cheats
 
         // Cambiar configuración de forma Aleatoria
-        btnRandom.setOnClickListener { v: View ->
+        btnRandom.setOnClickListener {
             var numsRand = gameModel.randomListNum(1..6, 1..6)
-            var numRand = gameModel.randomNum(0..5)
-            println(numRand)
+            val numRand = gameModel.randomNum(0..5)
             sliderQuestions.value = sliderQuestions.valueFrom + numRand * sliderQuestions.stepSize
-            gameModel.gameOptions[0].numQuestions = numRand
+            gameModel.gameOptions.numQuestions = numRand
         }
 
         // Cambia el número de preguntas con respecto al Slider correspondiente manipulado por el Usuario
@@ -50,7 +46,7 @@ class MainActivity2 : AppCompatActivity() {
             }
 
             override fun onStopTrackingTouch(slider: Slider) {
-                gameModel.gameOptions[0].numQuestions = slider.value.toInt()
+                gameModel.gameOptions.numQuestions = slider.value.toInt()
             }
         })
 
@@ -61,13 +57,13 @@ class MainActivity2 : AppCompatActivity() {
             }
 
             override fun onStopTrackingTouch(slider: Slider) {
-                gameModel.gameOptions[0].difficulty = slider.value.toInt()
+                gameModel.gameOptions.difficulty = slider.value.toInt()
             }
         })
 
         // Cambiar permiso para el uso de Cheats
-        switchCheats.setOnClickListener { v: View ->
-            gameModel.gameOptions[0].cheats = switchCheats.isChecked
+        switchCheats.setOnClickListener {
+            gameModel.gameOptions.cheats = switchCheats.isChecked
         }
     }
 

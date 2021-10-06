@@ -33,7 +33,11 @@ class MainActivity2 : AppCompatActivity() {
 
         // Cambiar configuración de forma Aleatoria
         btnRandom.setOnClickListener {
-            var numsRand = gameModel.randomListNum(1..6, 1..6)
+            val randElements = gameModel.randomListNum(1..6, 1..6)
+            for (i in randElements) {
+                dataModel.settOpts[i].isSelected = true
+            }
+            recyclerView.adapter = RecyclerViewAdapter(dataModel.settOpts)
             val numRand = gameModel.randomNum(0..5)
             sliderQuestions.value = sliderQuestions.valueFrom + numRand * sliderQuestions.stepSize
             gameModel.gameOptions.numQuestions = numRand
@@ -67,4 +71,17 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("numQuestions", gameModel.gameOptions.numQuestions)
+        outState.putInt("difficulty", gameModel.gameOptions.difficulty)
+        outState.putBoolean("cheats", gameModel.gameOptions.cheats)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        gameModel.gameOptions.numQuestions = savedInstanceState.getInt("numQuestions")
+        gameModel.gameOptions.difficulty = savedInstanceState.getInt("difficulty")
+        gameModel.gameOptions.cheats = savedInstanceState.getBoolean("cheats")
+    }
 }

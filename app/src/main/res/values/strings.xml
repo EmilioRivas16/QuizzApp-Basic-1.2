@@ -15,4 +15,7 @@
     <string name="btn_random">Aleatorio</string>
     <string name="txt_info_settings3">Elija la dificultad del juego.</string>
     <string name="txt_info_settings4">Permitir pistas.</string>
+    <string name="diff1">Fácil</string>
+    <string name="diff2">Intermedio</string>
+    <string name="diff3">Difícil</string>
 </resources>

@@ -10,13 +10,13 @@ class RecyclerViewAdapter(private val dataSet: List<Data>) :
     RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var checkbox: CheckBox = itemView.findViewById(R.id.checkSett)
-        fun populate(item : Data){
+        fun populate(item: Data) {
             checkbox.text = item.checkSett
             checkbox.isChecked = item.isSelected
         }
 
-        fun setSelectedItemState(item: Data, function:(item: Data) -> Unit){
-            checkbox.setOnClickListener{
+        fun setSelectedItemState(item: Data, function: (item: Data) -> Unit) {
+            checkbox.setOnClickListener {
                 item.isSelected = !item.isSelected
                 function(item)
             }
@@ -36,8 +36,8 @@ class RecyclerViewAdapter(private val dataSet: List<Data>) :
         holder.setSelectedItemState(dataSet[position], selectedItemsSetter)
     }
 
-    private var selectedItemsSetter = fun(dataSet: Data){
-        if (dataSet.isFirst){
+    private var selectedItemsSetter = fun(dataSet: Data) {
+        if (dataSet.isFirst) {
             setIsSelectedAllItems(dataSet.isSelected)
         } else {
             setIsSelectAllOptionsItem()
@@ -46,8 +46,8 @@ class RecyclerViewAdapter(private val dataSet: List<Data>) :
         notifyDataSetChanged()
     }
 
-    private fun setIsSelectedAllItems(isChecked: Boolean){
-        dataSet.map{
+    private fun setIsSelectedAllItems(isChecked: Boolean) {
+        dataSet.map {
             it.isSelected = isChecked
         }
     }

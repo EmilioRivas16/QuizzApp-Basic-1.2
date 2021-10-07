@@ -18,4 +18,110 @@
     <string name="diff1">Fácil</string>
     <string name="diff2">Intermedio</string>
     <string name="diff3">Difícil</string>
+
+    <!--seccion de elementos de verdadero y falso-->
+    <string name="true_text">True</string>
+    <string name="false_text">False</string>
+    <string name="correct_text">Correct</string>
+    <string name="incorrect_text">Incorrect</string>
+    <string name="next_text">Next</string>
+    <string name="previous_text">Previous</string>
+    <string name="answered_text">Question already answered</string>
+    <string name="question_text">Place Holder</string>
+
+    <!--String para darles formato desde código-->
+    <string name="btn">%1$s</string>
+    <string name="question_counter">%1$s/%2$s</string>
+
+    <!--seccion de preguntas Matematicas junto con sus respuestas, el quinto elemento de la matriz de strings será la respuesta correcta-->
+    <string name="pregunta1_pregunta">En un torneo de tenis, el jugador que pierde se vuelve a casa. Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos.</string>
+    <string-array name="pregunta1_respuestas">
+        <item>64</item>
+        <item>No se puede saber</item>
+        <item>127</item>
+        <item>129</item>
+        <item>129</item>
+    </string-array>
+
+    <string name="pregunta2_pregunta">¿Cuánto es la cuarta parte de la tercera parte?</string>
+    <string-array name="pregunta2_respuestas">
+        <item>3/4 partes</item>
+        <item>Un séptimo</item>
+        <item>La parte contratante de la tercera parte</item>
+        <item>Un doceavo</item>
+        <item>Un doceavo</item>
+    </string-array>
+
+    <string name="pregunta3_pregunta">Tengo 20 metros de cinta roja para hacer lazos en unos paquetes de regalo idénticos. Para cada lazo necesito 50 centímetros de cinta. ¿Cuántos lazos puedo hacer?</string>
+    <string-array name="pregunta3_respuestas">
+        <item>30 lazos</item>
+        <item>70 lazos</item>
+        <item>100 lazos</item>
+        <item>40 lazos</item>
+        <item>40 lazos</item>
+    </string-array>
+
+    <string name="pregunta4_pregunta">Si compro un bolígrafo y un lápiz me cobran 1€. Si el bolígrafo cuesta 30 céntimos más que el lápiz, ¿cuánto cuesta el bolígrafo?</string>
+    <string-array name="pregunta4_respuestas">
+        <item>Faltan datos</item>
+        <item>70 céntimos</item>
+        <item>0.35 euros</item>
+        <item>65 céntimos</item>
+        <item>65 céntimos</item>
+    </string-array>
+
+    <string name="pregunta5_pregunta">¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?</string>
+    <string-array name="pregunta5_respuestas">
+        <item>Un 25%</item>
+        <item>Un 75%</item>
+        <item>Depende del precio que tuviera antes de la subida</item>
+        <item>Un 20%</item>
+        <item>Un 20%</item>
+    </string-array>
+
+    <string name="pregunta6_pregunta">Mi plano está a escala 1:50000 (dos centímetros son un kilómetro) ¿Cuánto representaría en mi plano una ruta que en la realidad es de 20 kilómetros? ¿Cuánto será en el mundo real una ruta que en el plano son 9 centímetros?</string>
+    <string-array name="pregunta6_respuestas">
+        <item>40 centímetros y 4 kilómetros</item>
+        <item>40 kilómetros y 45 centímetros</item>
+        <item>Ninguna es correcta</item>
+        <item>40 centímetros y 4.5 kilómetros</item>
+        <item>40 centímetros y 4.5 kilómetros</item>
+    </string-array>
+
+    <string name="pregunta7_pregunta">Tengo que viajar en autobús durante 1,5 horas y luego esperar 45 minutos hasta tomar un tren que me dejará en mi destino dos horas y media después. ¿Cuánto dura mi trayecto?</string>
+    <string-array name="pregunta7_respuestas">
+        <item>4 horas y media</item>
+        <item>260 minutos</item>
+        <item>5 horas y cuarto</item>
+        <item>4 horas y 45 minutos</item>
+        <item>4 horas y 45 minutos</item>
+    </string-array>
+
+    <string name="pregunta8_pregunta">El monstruo del lago Ness mide 80 metros más la mitad de lo que mide, ¿cuánto mide el monstruo del lago Ness?</string>
+    <string-array name="pregunta8_respuestas">
+        <item>No se puede calcular, faltan dos</item>
+        <item>120 metros</item>
+        <item>80 metros</item>
+        <item>160 metros</item>
+        <item>160 metros</item>
+    </string-array>
+
+    <string name="pregunta9_pregunta">Hay 165 ovejas y 5 perros en un rebaño, ¿cuántos años tiene el pastor?</string>
+    <string-array name="pregunta9_respuestas">
+        <item>25 años</item>
+        <item>33 años</item>
+        <item>30 años</item>
+        <item>No se puede saber con estos datos</item>
+        <item>No se puede saber con estos datos</item>
+    </string-array>
+
+    <string name="pregunta10_pregunta">Un tren sale de Madrid en dirección Cádiz a las 10h. Media hora más tarde sale un tren de Cádiz dirección Madrid. A las 13h14 minutos los dos trenes se cruzan y los conductores se saludan con la mano. En ese momento, ¿cuál de los dos está más cerca de Cádiz?</string>
+    <string-array name="pregunta10_respuestas">
+        <item>Los dos</item>
+        <item>El de Cádiz</item>
+        <item>El de Madrid</item>
+        <item>Todas son correctas, en algún sentido</item>
+        <item>Todas son correctas, en algún sentido</item>
+    </string-array>
+
 </resources>

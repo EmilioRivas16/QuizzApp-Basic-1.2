@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="raisin_black">#282425</color>
     <color name="platinum">#E1E2E3</color>
+
+    <!-- verdadero y falso colores -->
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="hardpink">#C40FCF</color>
+    <color name="purple">#6D1FFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="correct">#14D814</color>
+    <color name="incorrect">#DA1F1F</color>
+
 </resources>
+

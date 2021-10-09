@@ -124,4 +124,458 @@
         <item>Todas son correctas, en algún sentido</item>
     </string-array>
 
+    <!-- Sección de pregutas de Literatura -->
+    <string name="pregunta1_l">¿Quién escribió "La Ilíada"?</string>
+    <string-array name="respuestas1_l">
+        <item>Marco Tulio Cicerón</item>
+        <item>Homero</item>
+        <item>Séneca</item>
+        <item>Heródoto</item>
+        <item>Homero</item>
+    </string-array>
+
+    <string name="pregunta2_l">Autor de "El Arte de la Guerra"</string>
+    <string-array name="respuestas2_l">
+        <item>Shi Jing</item>
+        <item>Sun Tzu</item>
+        <item>Dáo Dé Jing</item>
+        <item>Confucio</item>
+        <item>Sun Tzu</item>
+    </string-array>
+
+    <string name="pregunta3_l">¿Quién es el autor de la "Divina comedia"?</string>
+    <string-array name="respuestas3_l">
+        <item>Dante Alighieri</item>
+        <item>Petrarca</item>
+        <item>Giovanni Bocaccio</item>
+        <item>Maquiavelo</item>
+        <item>Dante Alighieri</item>
+    </string-array>
+
+    <string name="pregunta4_l">Filósofo griego, autor de "La República"</string>
+    <string-array name="respuestas4_l">
+        <item>Sócrates</item>
+        <item>Democrates</item>
+        <item>Aristóteles</item>
+        <item>Platón</item>
+        <item>Platón</item>
+    </string-array>
+
+    <string name="pregunta5_l">¿Por qué El Principito decide abandonar su planeta?</string>
+    <string-array name="respuestas5_l">
+        <item>Porque quería conocer la Tierra</item>
+        <item>Porque estaba enfermo</item>
+        <item>Porque el Rey le ordena irse</item>
+        <item>Porque sentía que una rosa se aprovechaba de él</item>
+        <item>Porque sentía que una rosa se aprovechaba de él</item>
+    </string-array>
+
+    <string name="pregunta6_l">¿Quién escribió "Utopía"?</string>
+    <string-array name="respuestas6_l">
+        <item>John Locke</item>
+        <item>Tomás Moro</item>
+        <item>Thomas Hobbes</item>
+        <item>Thomas Fale</item>
+        <item>Tomás Moro</item>
+    </string-array>
+
+    <string name="pregunta7_l">¿Cuál de estos escritores españoles no tiene el Premio Nobel?</string>
+    <string-array name="respuestas7_l">
+        <item>José Echegaray</item>
+        <item>Miguel Delibes</item>
+        <item>Vicente Aleixandre</item>
+        <item>Camilo José Cela</item>
+        <item>Miguel Delibes</item>
+    </string-array>
+
+    <string name="pregunta8_l">¿Quién escribió "Frankenstein"?</string>
+    <string-array name="respuestas8_l">
+        <item>Mary Shelley</item>
+        <item>Adele Gerhard</item>
+        <item>Jane Austin</item>
+        <item>Rosalie Loveling</item>
+        <item>Mary Shelley</item>
+    </string-array>
+
+    <string name="pregunta9_l">¿Cuál de estas obras no es de William Shakespeare?</string>
+    <string-array name="respuestas9_l">
+        <item>Alejandro Magno</item>
+        <item>Julio César</item>
+        <item>El sueño de una noche de verano</item>
+        <item>Hamlet</item>
+        <item>Alejandro Magno</item>
+    </string-array>
+
+    <string name="pregunta10_l">¿De qué novela es protagonista Edmond Dantes?</string>
+    <string-array name="respuestas10_l">
+        <item>El Conde de Montecristo</item>
+        <item>Los Tres Mosqueteros</item>
+        <item>Los Miserables</item>
+        <item>La Reina Margot</item>
+        <item>El Conde de Montecristo</item>
+    </string-array>
+
+    <!-- Preguntas de Historia -->
+    <string name="pregunta1_h">¿Quién fue el primer presidente de México?</string>
+    <string-array name="respuestas1_h">
+        <item>Guadalupe Victoria</item>
+        <item>Vicente Guerrero</item>
+        <item>José María Bocanegra </item>
+        <item>Miguel Hidalgo</item>
+        <item>Guadalupe Victoria</item>
+    </string-array>
+
+    <string name="pregunta2_h">¿En qué año ocurrió la Conquista Española?</string>
+    <string-array name="respuestas2_h">
+        <item>1521</item>
+        <item>1492</item>
+        <item>1510</item>
+        <item>1430</item>
+        <item>1521</item>
+    </string-array>
+
+    <string name="pregunta3_h">De acuerdo con la cosmovisión Mexica, ¿Cómo se llama “el lugar de los muertos”?</string>
+    <string-array name="respuestas3_h">
+        <item>Michtlán </item>
+        <item>Acatlán</item>
+        <item>Tenochtitlán</item>
+        <item>Zapopan</item>
+        <item>Michtlán</item>
+    </string-array>
+
+    <string name="pregunta4_h">¿Quién fue el último emperador Mexica?</string>
+    <string-array name="respuestas4_h">
+        <item>Cuauhtémoc</item>
+        <item>Moctezuma</item>
+        <item>Nezahualcóyotl</item>
+        <item>Quetzalcoatl</item>
+        <item>Cuauhtémoc</item>
+    </string-array>
+
+    <string name="pregunta5_h">De acuerdo con la mitología Mexica, ¿Quién es la Diosa de la fertilidad, patrona de la vida y de la muerte, y guía del renacimiento?</string>
+    <string-array name="respuestas5_h">
+        <item>Coatlicue</item>
+        <item>Huitzilopochtli</item>
+        <item>Coyolxauhqui</item>
+        <item>Tlaloc</item>
+        <item>Coatlicue</item>
+    </string-array>
+
+    <string name="pregunta6_h">¿De qué otra forma se le conoce a la Guerra de Reforma?</string>
+    <string-array name="respuestas6_h">
+        <item>Guerra de los Tres Años</item>
+        <item>Guerra de Castas</item>
+        <item>Guerra de Independencia</item>
+        <item>Guerra de los Pasteles</item>
+        <item>Guerra de los Tres Años</item>
+    </string-array>
+
+    <string name="pregunta7_h">¿Quién firmó el Tratado de Córdoba en el que se acordó la Independencia de México?</string>
+    <string-array name="respuestas7_h">
+        <item>Agustín de Iturbide</item>
+        <item>Miguel Hidalgo y Costilla</item>
+        <item>Ignacio Allende</item>
+        <item>Guadalupe Victoria</item>
+        <item>Agustín de Iturbide</item>
+    </string-array>
+
+    <string name="pregunta8_h">¿En qué conflicto bélico internacional participó el “Escuadrón 201”?</string>
+    <string-array name="respuestas8_h">
+        <item>Segunda Guerra Mundial</item>
+        <item>Primera Guerra Mundial</item>
+        <item>Guerra de Texas</item>
+        <item>Batalla de Puebla</item>
+        <item>Segunda Guerra Mundial</item>
+    </string-array>
+
+    <string name="pregunta9_h">¿A qué cultura pertenecen las cabezas colosales?</string>
+    <string-array name="respuestas9_h">
+        <item>Olmeca</item>
+        <item>Maya</item>
+        <item>Tolteca</item>
+        <item>Zapoteca</item>
+        <item>Olmeca</item>
+    </string-array>
+
+    <string name="pregunta10_h">¿A quién se le atribuye el lema "Sufragio efectivo, no reelección"?</string>
+    <string-array name="respuestas10_h">
+        <item>Francisco I. Madero</item>
+        <item>Benito Juárez</item>
+        <item>Plutarco Elías Calles</item>
+        <item>Porfirio Díaz</item>
+        <item>Francisco I. Madero</item>
+    </string-array>
+
+    <!-- Preguntas de Ciencias Naturales -->
+    <string name="pregunta1_cn">¿Qué tres partes se distinguen en el cuerpo humano?</string>
+    <string-array name="respuestas1_cn">
+        <item>Cabeza, piernas y brazos</item>
+        <item>Cuerpo, piernas y brazos</item>
+        <item>Cabeza, tronco y extremidades</item>
+        <item>Cerebro, corazón y estómago</item>
+        <item>Cabeza, tronco y extremidades</item>
+    </string-array>
+
+    <string name="pregunta2_cn">¿Cuáles son las funciones vitales de los seres humanos?</string>
+    <string-array name="respuestas2_cn">
+        <item>Nutrición y reproducción</item>
+        <item>Nacer, crecer y morir</item>
+        <item>Reproducción, relación y nutrición</item>
+        <item>Dormir, comer y crecer</item>
+        <item>Reproducción, relación y nutrición</item>
+    </string-array>
+
+    <string name="pregunta3_cn">¿Para qué sirven los sentidos?</string>
+    <string-array name="respuestas3_cn">
+        <item>Para sobrevivir</item>
+        <item>Para relacionarnos con el mundo que nos rodea</item>
+        <item>Para mejorar el rendimiento del cuerpo humano</item>
+        <item>Para viajar al espacio</item>
+        <item>Para relacionarnos con el mundo que nos rodea</item>
+    </string-array>
+
+    <string name="pregunta4_cn"> ¿Cómo se clasifican los animales según tengan columna vertebral o no?</string>
+    <string-array name="respuestas4_cn">
+        <item>Animales ovíparos o vivíparos</item>
+        <item>Animales vertebrados y animales invertebrados</item>
+        <item>Animales carnívoros, herbívoros u omnívoros</item>
+        <item>Caninos y felinos</item>
+        <item>Animales vertebrados y animales invertebrados</item>
+    </string-array>
+
+    <string name="pregunta5_cn">¿Qué utilizan los peces para respirar?</string>
+    <string-array name="respuestas5_cn">
+        <item>Pulmones</item>
+        <item>La boca</item>
+        <item>Branquias</item>
+        <item>Ojos</item>
+        <item>Branquias</item>
+    </string-array>
+
+    <string name="pregunta6_cn">¿Cuál es el animal más alto de la Tierra de entre los que viven fuera del mar?</string>
+    <string-array name="respuestas6_cn">
+        <item>La jirafa</item>
+        <item>El elefante</item>
+        <item>El oso polar</item>
+        <item>El escorpión</item>
+        <item>La jirafa</item>
+    </string-array>
+
+    <string name="pregunta7_cn">¿Puedes nombrar a un animal mamífero que vuela?</string>
+    <string-array name="respuestas7_cn">
+        <item>No existe</item>
+        <item>El albatros</item>
+        <item>El murciélago</item>
+        <item>Pajaro</item>
+        <item>El murciélago</item>
+    </string-array>
+
+    <string name="pregunta8_cn">¿Qué animales no necesitan aparearse para reproducirse? Es decir, basta con un solo individuo para asegurar la reproducción</string>
+    <string-array name="respuestas8_cn">
+        <item>La estrella de mar</item>
+        <item>El caballito de mar</item>
+        <item>Los caracoles</item>
+        <item>Ninguno de los anteriores</item>
+        <item>La estrella de mar</item>
+    </string-array>
+
+    <string name="pregunta9_cn">¿Cuál es el animal más veloz del mundo?</string>
+    <string-array name="respuestas9_cn">
+        <item>El guepardo</item>
+        <item>La pantera</item>
+        <item>El gamo</item>
+        <item>El tigre</item>
+        <item>El guepardo</item>
+    </string-array>
+
+    <string name="pregunta10_cn">¿Para qué sirve la raíz de las plantas?</string>
+    <string-array name="respuestas10_cn">
+        <item>Para absorber agua de la tierra</item>
+        <item>Para poder reproducirse</item>
+        <item>Para hacer la fotosíntesis</item>
+        <item>Para escalar paredes</item>
+        <item>Para absorber agua de la tierra</item>
+    </string-array>
+
+    <!-- Preguntasd de Deportes -->
+    <string name="pregunta1_d">¿Cuánto dura un partido de fútbol?</string>
+    <string-array name="respuestas1_d">
+        <item>90 minutos</item>
+        <item>45 minutos</item>
+        <item>120 Minutos</item>
+        <item>70 minutos</item>
+        <item>90 minutos</item>
+    </string-array>
+
+    <string name="pregunta2_d">¿Cuándo se celebró el primer mundial de fútbol?</string>
+    <string-array name="respuestas2_d">
+        <item>El 13 de julio de 1930</item>
+        <item>El 23 de julio de 1970</item>
+        <item>El 7 de julio de 1940</item>
+        <item>El 19 de julio de 1935</item>
+        <item>El 13 de julio de 1930</item>
+    </string-array>
+
+    <string name="pregunta3_d">¿Cuántos jugadores tiene un equipo de fútbol en el campo de juego?</string>
+    <string-array name="respuestas3_d">
+        <item>11</item>
+        <item>9</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string name="pregunta4_d">¿Quién ganó el mundial de fútbol de 2010?</string>
+    <string-array name="respuestas4_d">
+        <item>España</item>
+        <item>México</item>
+        <item>Alemania</item>
+        <item>Holanda</item>
+        <item>España</item>
+    </string-array>
+
+    <string name="pregunta5_d">¿Quién es el máximo goleador del FC Barcelona?</string>
+    <string-array name="respuestas5_d">
+        <item>Lionel Messi</item>
+        <item>Cristiano Ronaldo</item>
+        <item>Luis Suárez</item>
+        <item>Neymar Jr.</item>
+        <item>Lionel Messi</item>
+    </string-array>
+
+    <string name="pregunta6_d">¿Cuántos jugadores componen un equipo de rugby?</string>
+    <string-array name="respuestas6_d">
+        <item>15</item>
+        <item>12</item>
+        <item>10</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="pregunta7_d">¿En qué país se inventó el voleibol?</string>
+    <string-array name="respuestas7_d">
+        <item>Estados Unidos</item>
+        <item>México</item>
+        <item>Canadá</item>
+        <item>Afganistán</item>
+        <item>Estados Unidos</item>
+    </string-array>
+
+    <string name="pregunta8_d">¿Cuánto dura un partido de balonmano?</string>
+    <string-array name="respuestas8_d">
+        <item>60 minutos</item>
+        <item>50 minutos</item>
+        <item>40 minutos</item>
+        <item>30 minutos</item>
+        <item>60 minutos</item>
+    </string-array>
+
+    <string name="pregunta9_d">Si juegas en la NFL ¿qué deporte practicas?</string>
+    <string-array name="respuestas9_d">
+        <item>Fútbol Americano</item>
+        <item>Baloncesto</item>
+        <item>Volleyball</item>
+        <item>Cricket</item>
+        <item>Fútbol Americano</item>
+    </string-array>
+
+    <string name="pregunta10_d">¿Cada cuántos años se celebran los Juegos Olímpicos?</string>
+    <string-array name="respuestas10_d">
+        <item>4 años</item>
+        <item>3 años</item>
+        <item>2 años</item>
+        <item>1 año</item>
+        <item>4 años</item>
+    </string-array>
+
+    <!-- Preguntas de Cultura General -->
+    <string name="pregunta1_cg">¿Quién es el autor de la frase "Primero pienso, luego existo"?</string>
+    <string-array name="respuestas1_cg">
+        <item>Platón</item>
+        <item>Galileo Galilei</item>
+        <item>René Descartes</item>
+        <item>Sócrates</item>
+        <item>René Descartes</item>
+    </string-array>
+
+    <string name="pregunta2_cg">¿Cuál es el país más grande y el más pequeño del mundo?</string>
+    <string-array name="respuestas2_cg">
+        <item>Rusia y Vaticano</item>
+        <item>China y Nauru</item>
+        <item>Canadá y Mónaco</item>
+        <item>Estados Unidos y Malta</item>
+        <item>Rusia y Vaticano</item>
+    </string-array>
+
+    <string name="pregunta3_cg">¿Cuál es el libro más vendido en el mundo después de la Biblia?</string>
+    <string-array name="respuestas3_cg">
+        <item>El Señor de los Anillos</item>
+        <item>Don Quijote de la Mancha</item>
+        <item>El Principito</item>
+        <item>Cien años de Soledad</item>
+        <item>Don Quijote de la Mancha</item>
+    </string-array>
+
+    <string name="pregunta4_cg">¿Cuántos decimales tiene el número Pi "π"?</string>
+    <string-array name="respuestas4_cg">
+        <item>Dos</item>
+        <item>Cien</item>
+        <item>Infinitos</item>
+        <item>Mil</item>
+        <item>Infinitos</item>
+    </string-array>
+
+    <string name="pregunta5_cg">¿Cuál es el nombre del río más largo del mundo?</string>
+    <string-array name="respuestas5_cg">
+        <item>Río Nilo</item>
+        <item>Río Amazonas</item>
+        <item>Río Danubio</item>
+        <item>Rio Bravo</item>
+        <item>Río Amazonas</item>
+    </string-array>
+
+    <string name="pregunta6_cg">¿Cuál es el océano más grande del mundo?</string>
+    <string-array name="respuestas6_cg">
+        <item>Océano Pacífico</item>
+        <item>Océano Índico</item>
+        <item>Océano Atlántico</item>
+        <item>Océano Ártico</item>
+        <item>Océano Pacífico</item>
+    </string-array>
+
+    <string name="pregunta7_cg">¿Cuál es el país que tiene forma de bota?</string>
+    <string-array name="respuestas7_cg">
+        <item>España</item>
+        <item>Honduras</item>
+        <item>Italia</item>
+        <item>México</item>
+        <item>Italia</item>
+    </string-array>
+
+    <string name="pregunta8_cg">¿Cuál es el país más poblado de la tierra?</string>
+    <string-array name="respuestas8_cg">
+        <item>Estados Unidos</item>
+        <item>China</item>
+        <item>Rusia</item>
+        <item>Corea del Norte</item>
+        <item>China</item>
+    </string-array>
+
+    <string name="pregunta9_cg">¿Cuál es la capital de Nicaragua?</string>
+    <string-array name="respuestas9_cg">
+        <item>Santiago</item>
+        <item>Brasilia</item>
+        <item>Managua</item>
+        <item>Nigeria</item>
+        <item>Managua</item>
+    </string-array>
+
+    <string name="pregunta10_cg">¿Cuál es la segunda montaña más alta del mundo?</string>
+    <string-array name="respuestas10_cg">
+        <item>K2</item>
+        <item>K1</item>
+        <item>K3</item>
+        <item>Everest</item>
+        <item>K2</item>
+    </string-array>
 </resources>

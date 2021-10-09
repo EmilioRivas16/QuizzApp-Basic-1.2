@@ -2,8 +2,6 @@ package com.example.quizappbasic
 
 import android.content.Context
 
-// import android.content.res.Resources
-
 class GameModel(context: Context) {
     var gameOptions = Game(
         0,
@@ -19,7 +17,16 @@ class GameModel(context: Context) {
         return (rangeList).take(randomNum(rangeTake))
     }
 
-    private val questions = listOf(
+    private val questions = Themes(
+        listOf(), // Lista con preguntas de Matemáticas
+        listOf(), // Lista con preguntas de Literatura
+        listOf(), // Lista con preguntas de Historia
+        listOf(), // Lista con preguntas de Ciencias Naturales
+        listOf(), // Lista con preguntas de Deportes
+        listOf() // Lista con preguntas de Cultura General
+    )
+
+    /*private val questions = listOf(
         Question(
             context.getString(R.string.pregunta1_pregunta),
             context.resources.getStringArray(R.array.pregunta1_respuestas)
@@ -60,9 +67,8 @@ class GameModel(context: Context) {
             context.getString(R.string.pregunta10_pregunta),
             context.resources.getStringArray(R.array.pregunta10_respuestas)
         )
-    )
-    private var currentQuestionIndex = 0
-
+    )*/
+   /* private var currentQuestionIndex = 0
 
     fun getCurrentQuestion(): Question = questions[currentQuestionIndex]
 
@@ -87,14 +93,14 @@ class GameModel(context: Context) {
         return alreadyAnswerd
     }
 
-    /*fun previousQuestion(): Question {
+    *//*fun previousQuestion(): Question {
         if (currentQuestionIndex > 0) {
             currentQuestionIndex -= 1
         } else {
             currentQuestionIndex = questions.size - 1
         }
         return questions[currentQuestionIndex]
-    }*/
+    }*//*
 
     fun previousQuestion(): Question {
         if (currentQuestionIndex > 0) {
@@ -102,7 +108,7 @@ class GameModel(context: Context) {
             if (alreadyAnswerd(currentQuestionIndex)) {
                 for (index in currentQuestionIndex..0) {
                     println("Index en true: $index")
-                    if(!questions[index].answered) {
+                    if (!questions[index].answered) {
                         currentQuestionIndex = index
                         break
                     }
@@ -113,7 +119,7 @@ class GameModel(context: Context) {
             if (alreadyAnswerd(currentQuestionIndex)) {
                 for (index in currentQuestionIndex..0) {
                     println("Index en false: $index")
-                    if(!questions[index].answered) {
+                    if (!questions[index].answered) {
                         currentQuestionIndex = index
                         break
                     }
@@ -123,15 +129,10 @@ class GameModel(context: Context) {
         return questions[currentQuestionIndex]
     }
 
-    fun changeCurrentQuestionState(isCorrect: Boolean) {
-        questions[currentQuestionIndex].answered = true
-        questions[currentQuestionIndex].correct = isCorrect
-    }
-
     fun positionQuestion(): Int = currentQuestionIndex + 1
 
     fun totalQuestion(): Int = questions.size
 
-    fun getQuestions(): List<Question> = questions
+    fun getQuestions(): List<Question> = questions*/
 
 }

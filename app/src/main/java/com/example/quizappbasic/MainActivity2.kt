@@ -1,12 +1,16 @@
 package com.example.quizappbasic
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.widget.SwitchCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.slider.Slider
-
+const val SLIDER_NUM_QUESTIONS = "com.example.quizappbasic.SLIDER_NUM_QUESTIONS"
+const val SLIDER_DIFFICULTY = "com.example.quizappbasic.SLIDER_DIFFICULTY"
+const val CHEATS_ON = "com.example.quizappbasic.SLIDER_DIFFICULTY"
 class MainActivity2 : AppCompatActivity() {
     private lateinit var dataModel: DataModel
     private lateinit var gameModel: GameModel
@@ -22,6 +26,7 @@ class MainActivity2 : AppCompatActivity() {
         val sliderQuestions: Slider = findViewById(R.id.slider_num_questions)
         val sliderDiff: Slider = findViewById(R.id.slider_difficulty)
         val switchCheats: SwitchCompat = findViewById(R.id.switch_cheats)
+        val btnSave: Button = findViewById(R.id.save)
 
         //Inicializar configuración predeterminada
         recyclerView.adapter = RecyclerViewAdapter(dataModel.settOpts)
@@ -69,6 +74,16 @@ class MainActivity2 : AppCompatActivity() {
         switchCheats.setOnClickListener {
             gameModel.gameOptions.cheats = switchCheats.isChecked
         }
+
+        btnSave.setOnClickListener{
+            val intent: Intent = Intent(this, MainActivity4::class.java).apply {
+                putExtra(SLIDER_NUM_QUESTIONS, gameModel.gameOptions.numQuestions)
+                putExtra(SLIDER_DIFFICULTY, gameModel.gameOptions.difficulty)
+                //putExtra(CHEATS_ON, gameModel.gameOptions.cheats)
+            }
+            startActivity(intent)
+            finish()
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -80,8 +95,14 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        gameModel.gameOptions.numQuestions = savedInstanceState.getInt("numQuestions")
-        gameModel.gameOptions.difficulty = savedInstanceState.getInt("difficulty")
-        gameModel.gameOptions.cheats = savedInstanceState.getBoolean("cheats")
+        val sliderQuestions: Slider = findViewById(R.id.slider_num_questions)
+        val sliderDiff: Slider = findViewById(R.id.slider_difficulty)
+        val switchCheats: SwitchCompat = findViewById(R.id.switch_cheats)
+
+        sliderQuestions.value =
+            sliderQuestions.valueFrom + savedInstanceState.getInt("numQuestions") * sliderQuestions.stepSize
+        sliderDiff.value =
+            sliderDiff.valueFrom + savedInstanceState.getInt("difficulty") * sliderDiff.stepSize
+        switchCheats.isChecked = savedInstanceState.getBoolean("cheats")
     }
 }

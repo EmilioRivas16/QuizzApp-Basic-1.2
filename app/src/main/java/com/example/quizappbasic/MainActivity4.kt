@@ -13,8 +13,8 @@ class MainActivity4 : AppCompatActivity() {
         val buenas = myintent.getStringExtra(GOOD_ANSWERS)
         val malas = myintent.getStringExtra(BAD_ANSWERS)
 
-        findViewById<TextView>(R.id.totalDeBuenas).text = "El total de buenas es: $buenas"
-        findViewById<TextView>(R.id.totalDeMalas).text = "El total de malas es: $malas"
+        findViewById<TextView>(R.id.totalDeBuenas).text = "El número de preguntas es: $buenas"
+        findViewById<TextView>(R.id.totalDeMalas).text = "La dificultad es: $malas"
     }
 }
 

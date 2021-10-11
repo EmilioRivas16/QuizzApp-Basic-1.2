@@ -25,9 +25,59 @@ class GameModel(context: Context) {
             context.resources.getStringArray(R.array.pregunta1_respuestas), false, false
         ),
         Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta1_l),
+            context.resources.getStringArray(R.array.respuestas1_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta1_h),
+            context.resources.getStringArray(R.array.respuestas1_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta1_cn),
+            context.resources.getStringArray(R.array.respuestas1_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta1_d),
+            context.resources.getStringArray(R.array.respuestas1_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta1_cg),
+            context.resources.getStringArray(R.array.respuestas1_cg), false, false
+        ),
+        Question(
             context.getString(R.string.sett_opt2),
             context.getString(R.string.pregunta2_pregunta),
             context.resources.getStringArray(R.array.pregunta2_respuestas), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta2_l),
+            context.resources.getStringArray(R.array.respuestas2_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta2_h),
+            context.resources.getStringArray(R.array.respuestas2_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta2_cn),
+            context.resources.getStringArray(R.array.respuestas2_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta2_d),
+            context.resources.getStringArray(R.array.respuestas2_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta2_cg),
+            context.resources.getStringArray(R.array.respuestas2_cg), false, false
         ),
         Question(
             context.getString(R.string.sett_opt2),
@@ -35,9 +85,59 @@ class GameModel(context: Context) {
             context.resources.getStringArray(R.array.pregunta3_respuestas), false, false
         ),
         Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta3_l),
+            context.resources.getStringArray(R.array.respuestas3_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta3_h),
+            context.resources.getStringArray(R.array.respuestas3_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta3_cn),
+            context.resources.getStringArray(R.array.respuestas3_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta3_d),
+            context.resources.getStringArray(R.array.respuestas3_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta3_cg),
+            context.resources.getStringArray(R.array.respuestas3_cg), false, false
+        ),
+        Question(
             context.getString(R.string.sett_opt2),
             context.getString(R.string.pregunta4_pregunta),
             context.resources.getStringArray(R.array.pregunta4_respuestas), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta4_l),
+            context.resources.getStringArray(R.array.respuestas4_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta4_h),
+            context.resources.getStringArray(R.array.respuestas4_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta4_cn),
+            context.resources.getStringArray(R.array.respuestas4_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta4_d),
+            context.resources.getStringArray(R.array.respuestas4_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta4_cg),
+            context.resources.getStringArray(R.array.respuestas4_cg), false, false
         ),
         Question(
             context.getString(R.string.sett_opt2),
@@ -45,9 +145,59 @@ class GameModel(context: Context) {
             context.resources.getStringArray(R.array.pregunta5_respuestas), false, false
         ),
         Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta5_l),
+            context.resources.getStringArray(R.array.respuestas5_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta5_h),
+            context.resources.getStringArray(R.array.respuestas5_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta5_cn),
+            context.resources.getStringArray(R.array.respuestas5_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta5_d),
+            context.resources.getStringArray(R.array.respuestas5_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta5_cg),
+            context.resources.getStringArray(R.array.respuestas5_cg), false, false
+        ),
+        Question(
             context.getString(R.string.sett_opt2),
             context.getString(R.string.pregunta6_pregunta),
             context.resources.getStringArray(R.array.pregunta6_respuestas), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta6_l),
+            context.resources.getStringArray(R.array.respuestas6_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta6_h),
+            context.resources.getStringArray(R.array.respuestas6_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta6_cn),
+            context.resources.getStringArray(R.array.respuestas6_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta6_d),
+            context.resources.getStringArray(R.array.respuestas6_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta6_cg),
+            context.resources.getStringArray(R.array.respuestas6_cg), false, false
         ),
         Question(
             context.getString(R.string.sett_opt2),
@@ -55,14 +205,89 @@ class GameModel(context: Context) {
             context.resources.getStringArray(R.array.pregunta7_respuestas), false, false
         ),
         Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta7_l),
+            context.resources.getStringArray(R.array.respuestas7_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta7_h),
+            context.resources.getStringArray(R.array.respuestas7_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta7_cn),
+            context.resources.getStringArray(R.array.respuestas7_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta7_d),
+            context.resources.getStringArray(R.array.respuestas7_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta7_cg),
+            context.resources.getStringArray(R.array.respuestas7_cg), false, false
+        ),
+        Question(
             context.getString(R.string.sett_opt2),
             context.getString(R.string.pregunta8_pregunta),
             context.resources.getStringArray(R.array.pregunta8_respuestas), false, false
         ),
         Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta8_l),
+            context.resources.getStringArray(R.array.respuestas8_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta8_h),
+            context.resources.getStringArray(R.array.respuestas8_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta8_cn),
+            context.resources.getStringArray(R.array.respuestas8_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta8_d),
+            context.resources.getStringArray(R.array.respuestas8_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta8_cg),
+            context.resources.getStringArray(R.array.respuestas8_cg), false, false
+        ),
+        Question(
             context.getString(R.string.sett_opt2),
             context.getString(R.string.pregunta9_pregunta),
             context.resources.getStringArray(R.array.pregunta9_respuestas), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt3),
+            context.getString(R.string.pregunta9_l),
+            context.resources.getStringArray(R.array.respuestas9_l), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt4),
+            context.getString(R.string.pregunta9_h),
+            context.resources.getStringArray(R.array.respuestas9_h), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt5),
+            context.getString(R.string.pregunta9_cn),
+            context.resources.getStringArray(R.array.respuestas9_cn), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt6),
+            context.getString(R.string.pregunta9_d),
+            context.resources.getStringArray(R.array.respuestas9_d), false, false
+        ),
+        Question(
+            context.getString(R.string.sett_opt7),
+            context.getString(R.string.pregunta9_cg),
+            context.resources.getStringArray(R.array.respuestas9_cg), false, false
         ),
         Question(
             context.getString(R.string.sett_opt2),
@@ -71,98 +296,8 @@ class GameModel(context: Context) {
         ),
         Question(
             context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta1_l),
-            context.resources.getStringArray(R.array.respuestas1_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta2_l),
-            context.resources.getStringArray(R.array.respuestas2_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta3_l),
-            context.resources.getStringArray(R.array.respuestas3_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta4_l),
-            context.resources.getStringArray(R.array.respuestas4_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta5_l),
-            context.resources.getStringArray(R.array.respuestas5_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta6_l),
-            context.resources.getStringArray(R.array.respuestas6_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta7_l),
-            context.resources.getStringArray(R.array.respuestas7_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta8_l),
-            context.resources.getStringArray(R.array.respuestas8_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
-            context.getString(R.string.pregunta9_l),
-            context.resources.getStringArray(R.array.respuestas9_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt3),
             context.getString(R.string.pregunta10_l),
             context.resources.getStringArray(R.array.respuestas10_l), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta1_h),
-            context.resources.getStringArray(R.array.respuestas1_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta2_h),
-            context.resources.getStringArray(R.array.respuestas2_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta3_h),
-            context.resources.getStringArray(R.array.respuestas3_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta4_h),
-            context.resources.getStringArray(R.array.respuestas4_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta5_h),
-            context.resources.getStringArray(R.array.respuestas5_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta6_h),
-            context.resources.getStringArray(R.array.respuestas6_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta7_h),
-            context.resources.getStringArray(R.array.respuestas7_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta8_h),
-            context.resources.getStringArray(R.array.respuestas8_h), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt4),
-            context.getString(R.string.pregunta9_h),
-            context.resources.getStringArray(R.array.respuestas9_h), false, false
         ),
         Question(
             context.getString(R.string.sett_opt4),
@@ -171,148 +306,13 @@ class GameModel(context: Context) {
         ),
         Question(
             context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta1_cn),
-            context.resources.getStringArray(R.array.respuestas1_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta2_cn),
-            context.resources.getStringArray(R.array.respuestas2_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta3_cn),
-            context.resources.getStringArray(R.array.respuestas3_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta4_cn),
-            context.resources.getStringArray(R.array.respuestas4_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta5_cn),
-            context.resources.getStringArray(R.array.respuestas5_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta6_cn),
-            context.resources.getStringArray(R.array.respuestas6_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta7_cn),
-            context.resources.getStringArray(R.array.respuestas7_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta8_cn),
-            context.resources.getStringArray(R.array.respuestas8_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
-            context.getString(R.string.pregunta9_cn),
-            context.resources.getStringArray(R.array.respuestas9_cn), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt5),
             context.getString(R.string.pregunta10_cn),
             context.resources.getStringArray(R.array.respuestas10_cn), false, false
         ),
         Question(
             context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta1_d),
-            context.resources.getStringArray(R.array.respuestas1_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta2_d),
-            context.resources.getStringArray(R.array.respuestas2_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta3_d),
-            context.resources.getStringArray(R.array.respuestas3_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta4_d),
-            context.resources.getStringArray(R.array.respuestas4_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta5_d),
-            context.resources.getStringArray(R.array.respuestas5_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta6_d),
-            context.resources.getStringArray(R.array.respuestas6_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta7_d),
-            context.resources.getStringArray(R.array.respuestas7_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta8_d),
-            context.resources.getStringArray(R.array.respuestas8_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
-            context.getString(R.string.pregunta9_d),
-            context.resources.getStringArray(R.array.respuestas9_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt6),
             context.getString(R.string.pregunta10_d),
             context.resources.getStringArray(R.array.respuestas10_d), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta1_cg),
-            context.resources.getStringArray(R.array.respuestas1_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta2_cg),
-            context.resources.getStringArray(R.array.respuestas2_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta3_cg),
-            context.resources.getStringArray(R.array.respuestas3_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta4_cg),
-            context.resources.getStringArray(R.array.respuestas4_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta5_cg),
-            context.resources.getStringArray(R.array.respuestas5_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta6_cg),
-            context.resources.getStringArray(R.array.respuestas6_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta7_cg),
-            context.resources.getStringArray(R.array.respuestas7_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta8_cg),
-            context.resources.getStringArray(R.array.respuestas8_cg), false, false
-        ),
-        Question(
-            context.getString(R.string.sett_opt7),
-            context.getString(R.string.pregunta9_cg),
-            context.resources.getStringArray(R.array.respuestas9_cg), false, false
         ),
         Question(
             context.getString(R.string.sett_opt7),
@@ -325,7 +325,7 @@ class GameModel(context: Context) {
 
     // Obtener los temas de la Configuración establecida por el usuario o configuración predeterminada
     private fun getCurrentThemes(): List<String> {
-        lateinit var themes: MutableList<String>
+        val themes: MutableList<String> = mutableListOf()
         for (i in dataOptions.settOpts) {
             if (i.isSelected) {
                 themes.add(i.checkSett)
@@ -335,33 +335,30 @@ class GameModel(context: Context) {
     }
 
     // Obtener las preguntas que hagan match con los Temas seleccionados
-    private fun getQuestions(): List<Question>{
-        lateinit var newQuestions: MutableList<Question>
-        for (i in getCurrentThemes()){
-            for(j in questions){
-                if (i == j.theme){
+    fun getQuestions(): List<Question> {
+        val newQuestions: MutableList<Question> = mutableListOf()
+        for (i in getCurrentThemes()) {
+            for (j in questions) {
+                if (i == j.theme) {
                     newQuestions.add(j)
                 }
             }
         }
-        return newQuestions
-    }
-
-    // Preguntas a mostrar en la partida tomando el número establecido en las opciones
-    private fun questionsToShow(): List<Question> {
-        return getQuestions().take(gameOptions.numQuestions)
+        return newQuestions.shuffled().take(gameOptions.numQuestions)
     }
 
     // Obtiene la pregunta actual en la lista final de preguntas
-    fun getCurrentQuestion(): Question = questionsToShow()[currentQuestionIndex]
+    fun getCurrentQuestion(): Question = getQuestions()[currentQuestionIndex]
 
-    private fun totalQuestions(): Int{
-        return questionsToShow().size
+    fun totalQuestions(): Int {
+        return getQuestions().size
     }
 
-    fun nextQuestion(): Question{
-        currentQuestionIndex = (currentQuestionIndex + 1) / totalQuestions()
-        return questionsToShow()[currentQuestionIndex]
+    fun initialPositionQuestion(): Int = currentQuestionIndex + 1
+
+    fun nextQuestion(): Question {
+        currentQuestionIndex = (currentQuestionIndex + 1) % totalQuestions()
+        return getQuestions()[currentQuestionIndex]
     }
 
     fun previousQuestion(): Question {
@@ -370,71 +367,6 @@ class GameModel(context: Context) {
         } else {
             (currentQuestionIndex - 1) % totalQuestions()
         }
-        return questionsToShow()[currentQuestionIndex]
+        return getQuestions()[currentQuestionIndex]
     }
-
-    /*
-     fun nextQuestion(): Question {
-         currentQuestionIndex = (currentQuestionIndex + 1) % questions.size
-         if (alreadyAnswerd(currentQuestionIndex)) {
-             for (index in currentQuestionIndex until questions.size) {
-                 if (!questions[index].answered) {
-                     currentQuestionIndex = index
-                     break;
-                 }
-             }
-         }
-         return questions[currentQuestionIndex]
-     }
-
-     fun alreadyAnswerd(index: Int): Boolean {
-         var alreadyAnswerd = false
-         if (questions[index].answered) {
-             alreadyAnswerd = true
-         }
-         return alreadyAnswerd
-     }
-
-     *//*fun previousQuestion(): Question {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex -= 1
-        } else {
-            currentQuestionIndex = questions.size - 1
-        }
-        return questions[currentQuestionIndex]
-    }*//*
-
-    fun previousQuestion(): Question {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex--
-            if (alreadyAnswerd(currentQuestionIndex)) {
-                for (index in currentQuestionIndex..0) {
-                    println("Index en true: $index")
-                    if (!questions[index].answered) {
-                        currentQuestionIndex = index
-                        break
-                    }
-                }
-            }
-        } else {
-            currentQuestionIndex = questions.size - 1
-            if (alreadyAnswerd(currentQuestionIndex)) {
-                for (index in currentQuestionIndex..0) {
-                    println("Index en false: $index")
-                    if (!questions[index].answered) {
-                        currentQuestionIndex = index
-                        break
-                    }
-                }
-            }
-        }
-        return questions[currentQuestionIndex]
-    }
-
-    fun positionQuestion(): Int = currentQuestionIndex + 1
-
-    fun totalQuestion(): Int = questions.size
-
-    fun getQuestions(): List<Question> = questions*/
-
 }

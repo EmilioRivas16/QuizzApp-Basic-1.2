@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -21,24 +22,31 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var txt1: TextView
 
     private lateinit var question: Question
-
-    private var dificulty = 3
     private var randomOrder: Array<Int> = arrayOf(10, 10, 10, 10)
     private lateinit var buttonsArray: Array<Button>
+
+    private lateinit var btnHint: Button
+
+    private var cheatsAvailable: Int = 2
+
+    var answerdWithOutCheat: Int = 1
+    var answerCounter: Int = 1
+    private var previousCheat: Boolean = false
+    private var actualCheat: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
-        gameModel = GameModel(this)
-        txtQuestion = findViewById(R.id.question_text)
 
+        gameModel = GameModel(this)
+
+        txtQuestion = findViewById(R.id.question_text)
         btnPrev = findViewById(R.id.prev_button)
         btnNext = findViewById(R.id.next_button)
-
         txt1 = findViewById(R.id.textView1)
-        txt1.text = "${gameModel.positionQuestion()}/${gameModel.totalQuestion()}"
 
+        txt1.text = "${gameModel.initialPositionQuestion()}/${gameModel.totalQuestions()}"
         question = gameModel.getCurrentQuestion()
         txtQuestion.text = question.question
         buttonsArray = arrayOf(
@@ -52,9 +60,28 @@ class MainActivity3 : AppCompatActivity() {
         addButtonsToView()
         createButtonsAnswers()
 
-        btnPrev.setOnClickListener { view: View -> btnPrevNext(view) }
-        btnNext.setOnClickListener { view: View -> btnPrevNext(view) }
+        btnPrev.setOnClickListener { v: View ->
+            btnPrevNext(v)
+        }
+        btnNext.setOnClickListener { v: View ->
+            btnPrevNext(v)
+        }
 
+        btnHint = findViewById(R.id.hint)
+        btnHint.setOnClickListener { view: View ->
+            if (cheatsAvailable >= 1) {
+                if (giveAHint()) {
+                    cheatsAvailable--
+                }
+                Toast.makeText(
+                    applicationContext,
+                    "Tienes $cheatsAvailable pista/pistas",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                Toast.makeText(applicationContext, "Ya no tienes pistas", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     @SuppressLint("SetTextI18n")
@@ -70,8 +97,7 @@ class MainActivity3 : AppCompatActivity() {
             valState()
             // noMoreQuestions()
             txtQuestion.text = question.question
-            txtQuestion.setTextColor(ContextCompat.getColor(this, R.color.black))
-            txt1.text = "${gameModel.positionQuestion()}/${gameModel.totalQuestion()}"
+            txt1.text = "${gameModel.initialPositionQuestion()}/${gameModel.totalQuestions()}"
         } else if (btn.id == R.id.next_button) {
             question = gameModel.nextQuestion()
             sortAnswers()
@@ -80,17 +106,13 @@ class MainActivity3 : AppCompatActivity() {
             valState()
             noMoreQuestions()
             txtQuestion.text = question.question
-            txtQuestion.setTextColor(ContextCompat.getColor(this, R.color.black))
-            txt1.text = "${gameModel.positionQuestion()}/${gameModel.totalQuestion()}"
+            txt1.text = "${gameModel.initialPositionQuestion()}/${gameModel.totalQuestions()}"
         }
-        // Sección donde la pregunta es correcta o no
-        // txtQuestion.setTextColor(if (!question.answered) default else if (question.correct) correct else incorrect)
     }
 
     private fun noMoreQuestions(): Boolean {
         counterNoMoreQuestion = 0
         val questions = gameModel.getQuestions()
-
         var goodAnswers = 0
         var badAnswers = 0
 
@@ -104,37 +126,34 @@ class MainActivity3 : AppCompatActivity() {
             if (questions[index].answered) {
                 counterNoMoreQuestion++
             }
-            println("Indice: $index, Counter: $counterNoMoreQuestion")
         }
-        println("Counter: $counterNoMoreQuestion, Buenas: $goodAnswers, Malas: $badAnswers")
 
-        if (counterNoMoreQuestion == gameModel.totalQuestion()) {
+        if (counterNoMoreQuestion == gameModel.totalQuestions()) {
             val intent: Intent = Intent(applicationContext, MainActivity4::class.java).apply {
                 putExtra(GOOD_ANSWERS, goodAnswers.toString())
                 putExtra(BAD_ANSWERS, badAnswers.toString())
             }
-            println("Counter: $counterNoMoreQuestion, Buenas: $goodAnswers, Malas: $badAnswers")
             startActivity(intent)
             finish()
         }
         return false
     }
 
+    private var difficulty = 3
+
     private fun createButtonsAnswers() {
-        for (index in 0..dificulty) {
+        for (index in 0..difficulty) {
             buttonsArray[index].setBackgroundColor(ContextCompat.getColor(this, R.color.white))
             buttonsArray[index].text = getString(R.string.btn, question.answers[randomOrder[index]])
             buttonsArray[index].setOnClickListener { view: View ->
                 isAnswerCorrect(view as Button)
-                //Toast.makeText(applicationContext, view.text, Toast.LENGTH_SHORT).show()
-
             }
         }
     }
 
     private fun addButtonsToView() {
         val layoutRespuestas: LinearLayout = findViewById(R.id.layout_respuestas)
-        for (index in 0..dificulty) {
+        for (index in 0..difficulty) {
             buttonsArray[index]
             layoutRespuestas.addView(buttonsArray[index])
         }
@@ -146,7 +165,7 @@ class MainActivity3 : AppCompatActivity() {
         var loopController = true
         while (loopController) {
             val number = (0..3).random()
-            if (index == dificulty) {
+            if (index == difficulty) {
                 loopController = false
             } else if (randomOrder[index] == 10) {
                 randomOrder[index] = number
@@ -163,7 +182,7 @@ class MainActivity3 : AppCompatActivity() {
 
     private fun answerInside(): Boolean {
         var inside = false
-        for (index in 0..dificulty) {
+        for (index in 0..difficulty) {
             if (question.answers[randomOrder[index]] == question.answers[4]) {
                 inside = true
             }
@@ -173,13 +192,13 @@ class MainActivity3 : AppCompatActivity() {
     }
 
     private fun insertAnswer() {
-        val number: Int = (0..dificulty).random()
+        val number: Int = (0..difficulty).random()
         randomOrder[number] = 3
     }
 
     private fun alreadyInside(array: Array<Int>, number: Int): Boolean {
         var inside = false
-        for (index in 0..dificulty) {
+        for (index in 0..difficulty) {
             if (array[index] == number) {
                 inside = true
             }
@@ -194,16 +213,50 @@ class MainActivity3 : AppCompatActivity() {
         if (answer == button.text) {
             question.answered = true
             question.correct = true
-            button.setBackgroundColor(correct)
+            //button.setBackgroundColor(correct)
             txtQuestion.setTextColor(correct)
-            lockButtons()
+            Toast.makeText(this, R.string.correct_text, Toast.LENGTH_SHORT).show()
+            //lockButtons()
+            for (button in buttonsArray) {
+                println("Texto del botón: ${button.text}")
+                if (button.isEnabled == false) {
+                    previousCheat = true
+                    actualCheat = true
+                    println("Se usó un cheat")
+                    break
+                }
+            }
+
+            if (answerCounter > 1) {
+                println("Luego de la primera pregunta")
+                println("Valor de previousCheat: $previousCheat y actualCheat: $actualCheat")
+                if (previousCheat == false && actualCheat == false) {
+                    println("Valor de answerdWithOutCheat: $answerdWithOutCheat, con modulo aplicado es: ${answerdWithOutCheat % 2}")
+                    if (answerdWithOutCheat % 2 == 0) {
+                        cheatsAvailable += 1
+                        println("Se incrementó el número de cheats a $cheatsAvailable")
+                    }
+                    answerdWithOutCheat += 1
+                    println("Valor de answerdWithOutCheat luego de incrementar: $answerdWithOutCheat")
+                    println("No se hubo trampa en la respuesta del anterior")
+                } else {
+                    println("Hubo trampa en la respuesta del anterior")
+                    previousCheat = actualCheat
+                    actualCheat = false
+                }
+            } else {
+                actualCheat = false
+            }
         } else {
             question.answered = true
             question.correct = false
-            button.setBackgroundColor(incorrect)
+            //button.setBackgroundColor(incorrect)
             txtQuestion.setTextColor(incorrect)
-            lockButtons()
+            Toast.makeText(this, R.string.incorrect_text, Toast.LENGTH_SHORT).show()
+            // lockButtons()
         }
+        lockButtons()
+        answerCounter++
     }
 
     private fun valState() {
@@ -233,6 +286,44 @@ class MainActivity3 : AppCompatActivity() {
     private fun unlockButtons() {
         for (element in buttonsArray) {
             element.isEnabled = true
+        }
+    }
+
+    fun giveAHint(): Boolean {
+        // var loopController = true
+        // var index = 0
+        while (true) {
+            if (answerCounter == 5 && cheatsAvailable == 2) {
+                println("Quinta pregunta")
+            }
+            val randomNumber = (0..50).random()
+            val randomIndex = randomNumber % (difficulty + 1)
+
+            // En dado caso de que no es tuvieran mas botones activos, se saldrá del while infinito
+            var superControll = 0
+            for (button in buttonsArray) {
+                if (!button.isEnabled) superControll += 1
+            }
+            println("Valor de superControll: $superControll, valor de dificulty: ${difficulty + 1}")
+            // Salida del while infinito
+            if (superControll == difficulty || superControll == (difficulty + 1)) {
+                println("Sale del ciclo de hints")
+                return false
+            }
+            println("Valor de randomNumber: $randomNumber")
+            println("Valor de randomIndex: $randomIndex")
+
+            // Pinta y deshabilita un botón al azar, mientras no sea el botón de la respuestas
+            if (buttonsArray[randomIndex].isEnabled) {
+                if (buttonsArray[randomIndex].text != question.answers[4]) {
+                    buttonsArray[randomIndex].background = getDrawable(R.drawable.drawable_button)
+                    // buttonsArray[randomIndex].isClickable = false
+                    buttonsArray[randomIndex].isEnabled = false
+                    //buttonsArray[randomIndex].setBackgroundColor(resources.getColor(R.color.purple))
+                    return true
+
+                }
+            }
         }
     }
 

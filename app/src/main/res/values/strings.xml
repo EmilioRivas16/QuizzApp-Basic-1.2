@@ -18,12 +18,13 @@
     <string name="diff1">Fácil</string>
     <string name="diff2">Intermedio</string>
     <string name="diff3">Difícil</string>
+    <string name="save">Guardar</string>
 
     <!--seccion de elementos de verdadero y falso-->
     <string name="true_text">True</string>
     <string name="false_text">False</string>
-    <string name="correct_text">Correct</string>
-    <string name="incorrect_text">Incorrect</string>
+    <string name="correct_text">Respuesta Correcta</string>
+    <string name="incorrect_text">Respuesta Incorrecta</string>
     <string name="next_text">Next</string>
     <string name="previous_text">Previous</string>
     <string name="answered_text">Question already answered</string>
